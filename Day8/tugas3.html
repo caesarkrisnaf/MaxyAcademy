@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Chart with Hover Event</title>
+</head>
+
+<body>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        // Membuat chart line
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [1, 2, 3, 4, 5],
+                    fill: false,
+                    borderColor: 'red',
+                    tension: 0.1,
+                    borderWidth: 2
+                }]
+            },
+        });
+
+        // Menambahkan event listener untuk event mouse hover
+        ctx.addEventListener('mousemove', function (event) {
+            const points = myChart.getElementsAtEventForMode(event, 'nearest', { intersect: true }, true);
+            
+            if (points.length) {
+                const firstPoint = points[0];
+                const label = myChart.data.labels[firstPoint.index];
+                const value = myChart.data.datasets[firstPoint.datasetIndex].data[firstPoint.index];
+                console.log(`Data index yang dihover: ${firstPoint.index}, Label: ${label}, Value: ${value}`);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
