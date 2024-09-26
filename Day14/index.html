@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Manajemen Perpustakaan</title>
+</head>
+<body>
+    <h1>Sistem Manajemen Perpustakaan</h1>
+
+    <h2>Daftar Buku Tersedia</h2>
+    <ul>
+        <?php foreach ($_SESSION['books'] as $code => $title): ?>
+            <li><?php echo "$code: $title"; ?></li>
+        <?php endforeach; ?>
+    </ul>
+
+    <h2>Daftar Buku yang Dipinjam</h2>
+    <ul>
+        <?php foreach ($_SESSION['borrowedBooks'] as $code => $title): ?>
+            <li><?php echo "$code: $title"; ?></li>
+        <?php endforeach; ?>
+    </ul>
+
+    <h2>Pinjam atau Kembalikan Buku</h2>
+    <form method="POST" action="">
+        <label for="bookCode">Masukkan Kode Buku:</label>
+        <input type="text" id="bookCode" name="bookCode" required>
+        <button type="submit" name="borrow">Pinjam Buku</button>
+        <button type="submit" name="return">Kembalikan Buku</button>
+    </form>
+
+    <p><?php echo $message; ?></p>
+</body>
+</html>
