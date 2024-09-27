@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Penilaian Siswa</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Penilaian Siswa</h1>
+        <form action="proses.php" method="POST">
+            <label for="nama">Nama Siswa:</label>
+            <input type="text" name="nama" id="nama" required><br><br>
+
+            <label for="nilai_1">Nilai Mata Pelajaran 1:</label>
+            <input type="number" name="nilai_1" id="nilai_1" required><br><br>
+
+            <label for="nilai_2">Nilai Mata Pelajaran 2:</label>
+            <input type="number" name="nilai_2" id="nilai_2" required><br><br>
+
+            <label for="nilai_3">Nilai Mata Pelajaran 3:</label>
+            <input type="number" name="nilai_3" id="nilai_3" required><br><br>
+
+            <input type="submit" value="Hitung Nilai">
+        </form>
+    </div>
+</body>
+</html>
