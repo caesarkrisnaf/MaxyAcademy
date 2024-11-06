@@ -37,14 +37,14 @@ copy .env.example menjadi .env
 ## Buat database di localhost 
 
 ```bash
-nama database : laravel_blog
+nama database : task_day27
 ```
 
 ## Setting database di .env
 
 ```bash
 DB_PORT=3306
-DB_DATABASE=laravel_blog
+DB_DATABASE=task_day27
 DB_USERNAME=root
 DB_PASSWORD=
 ```
