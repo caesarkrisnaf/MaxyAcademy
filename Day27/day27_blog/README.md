@@ -1,25 +1,4 @@
-<h1 align="center">Laravel 8 Blog</h1>
-
-## Author
-
-Laravel 8 blog dibaut oleh :
-
-- Github : <a href="https://github.com/musyahya/laravel_8_blog"> Musyahya </a>
-- Youtube : <a href="https://www.youtube.com/channel/UC1iCvpMssrHnUsWKEe2cOag"> Musyahya </a>
-
-## Fitur 
-
-- Autentikasi Admin, Penulis dan Pembaca
-- CRUD Kategori
-- CRUD Tag
-- CRUD Post
-- CRUD Banner
-- CRUD Logo
-- CRUD Footer
-- CRUD Tentang/About
-- Rekomendasi post
-- Like post
-- Dan lain-lain
+<h1 align="center">Laravel Blog</h1>
 
 ## User
 
@@ -40,18 +19,6 @@ Laravel 8 blog dibaut oleh :
 
 ## Install
 
-**Clone Repository**
-
-```bash
-git clone https://github.com/musyahya/laravel_8_blog.git
-```
-
-**Download zip**
-
-```bash
-extract file zip
-```
-
 ## Buka di kode editor
 
 
@@ -70,14 +37,14 @@ copy .env.example menjadi .env
 ## Buat database di localhost 
 
 ```bash
-nama database : laravel_8_blog
+nama database : laravel_blog
 ```
 
 ## Setting database di .env
 
 ```bash
 DB_PORT=3306
-DB_DATABASE=laravel_8_blog
+DB_DATABASE=laravel_blog
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -106,11 +73,4 @@ php artisan storage:link
 php artisan serve
 ```
 
-## Contributing
 
-Contributions, issues and feature requests di persilahkan.
-Jangan ragu untuk memeriksa halaman masalah jika Anda ingin berkontribusi. **Berhubung Project ini saya sudah selesaikan sendiri, namun banyak fitur yang kalian dapat tambahkan silahkan berkontribusi yaa!**
-
-## License
-
-- Copyright © 2021 Musyahya.
