@@ -15,7 +15,7 @@ class FooterSeeder extends Seeder
     public function run()
     {
         Footer::create([
-            'konten' => 'Laravel 8 Blog Musyahya'
+            'konten' => 'Caesar Krisna Febrianto'
         ]);
     }
 }
